@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     
     //MARK: Actions
@@ -20,13 +20,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotButton(_ sender: UIButton) {
-    }
-    
-    
-    @IBAction func backButton(_ sender: UIButton) {
-    }
-    
-    @IBAction func backButton2(_ sender: UIButton) {
     }
     
     override func viewDidLoad() {

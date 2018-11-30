@@ -13,7 +13,7 @@
         <!--AppHomePage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="AppHomePage" id="BYZ-38-t0r" customClass="ViewController" customModule="CASL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AppHomePage" id="BYZ-38-t0r" customClass="MainViewController" customModule="CASL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
         <!--LoginPage-->
         <scene sceneID="bOw-Kd-y3T">
             <objects>
-                <viewController title="LoginPage" id="MjQ-sJ-1qG" sceneMemberID="viewController">
+                <viewController title="LoginPage" id="MjQ-sJ-1qG" customClass="LoginViewController" customModule="CASL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uhy-4r-bLq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,15 +164,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-S1-wuA">
+                                <rect key="frame" x="164" y="247" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="MjQ-sJ-1qG" eventType="touchUpInside" id="hf7-iO-Nof"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sST-k7-AVh"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="cQE-V8-ouj" id="Aaf-qs-hVy"/>
+                        <outlet property="passwordTextField" destination="18k-Bn-bsp" id="eMw-S4-XAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pt7-h1-byp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1370" y="-224"/>
         </scene>
         <!--signupPage-->
         <scene sceneID="89a-gV-acQ">
