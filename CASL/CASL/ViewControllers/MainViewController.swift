@@ -9,14 +9,15 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    
-    //MARK: Actions
     
     @IBAction func loginButton(_ sender: UIButton) {
+        let vc: LoginViewController = StoryBoard.login.createViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func signupButton(_ sender: UIButton) {
+        let vc: SignupViewController = StoryBoard.signup.createViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func forgotButton(_ sender: UIButton) {
@@ -24,6 +25,12 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func didReceiveMemoryWarning(){

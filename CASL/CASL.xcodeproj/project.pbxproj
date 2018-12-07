@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20203F0921BAFD660083D700 /* StoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20203F0821BAFD660083D700 /* StoryboardExtensions.swift */; };
+		20203F0D21BAFE680083D700 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20203F0B21BAFE680083D700 /* Login.storyboard */; };
+		20203F1021BAFE820083D700 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20203F0E21BAFE820083D700 /* Signup.storyboard */; };
+		20203F1221BAFEB70083D700 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20203F1121BAFEB70083D700 /* SignupViewController.swift */; };
+		20203F1321BAFF3C0083D700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B32321AECFD100911EC2 /* Main.storyboard */; };
 		2A07B32021AECFD100911EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07B31F21AECFD100911EC2 /* AppDelegate.swift */; };
 		2A07B32221AECFD100911EC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07B32121AECFD100911EC2 /* MainViewController.swift */; };
-		2A07B32521AECFD100911EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B32321AECFD100911EC2 /* Main.storyboard */; };
 		2A07B32721AECFD300911EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B32621AECFD300911EC2 /* Assets.xcassets */; };
 		2A07B32A21AECFD300911EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B32821AECFD300911EC2 /* LaunchScreen.storyboard */; };
 		2A07B33521AECFD300911EC2 /* CASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07B33421AECFD300911EC2 /* CASLTests.swift */; };
-		2A07B34D21AF0B1500911EC2 /* 96Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B34C21AF0B1500911EC2 /* 96Sans.ttf */; };
 		2A5A22B421B1BB1D00F4312E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A22B321B1BB1D00F4312E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20203F0821BAFD660083D700 /* StoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtensions.swift; sourceTree = "<group>"; };
+		20203F0C21BAFE680083D700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		20203F0F21BAFE820083D700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signup.storyboard; sourceTree = "<group>"; };
+		20203F1121BAFEB70083D700 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2A07B31C21AECFD100911EC2 /* CASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A07B31F21AECFD100911EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A07B32121AECFD100911EC2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20203F0521BAFD3E0083D700 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20203F0821BAFD660083D700 /* StoryboardExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20203F0A21BAFDBE0083D700 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2A07B32321AECFD100911EC2 /* Main.storyboard */,
+				20203F0B21BAFE680083D700 /* Login.storyboard */,
+				20203F0E21BAFE820083D700 /* Signup.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		2A07B31321AECFD100911EC2 = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +109,6 @@
 			children = (
 				2A5A22B521B1BB2400F4312E /* ViewControllers */,
 				2A07B31F21AECFD100911EC2 /* AppDelegate.swift */,
-				2A07B32321AECFD100911EC2 /* Main.storyboard */,
 				2A07B32621AECFD300911EC2 /* Assets.xcassets */,
 				2A07B32821AECFD300911EC2 /* LaunchScreen.storyboard */,
 				2A07B32B21AECFD300911EC2 /* Info.plist */,
@@ -112,8 +136,11 @@
 		2A5A22B521B1BB2400F4312E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				20203F0A21BAFDBE0083D700 /* Storyboards */,
+				20203F0521BAFD3E0083D700 /* Extensions */,
 				2A07B32121AECFD100911EC2 /* MainViewController.swift */,
 				2A5A22B321B1BB1D00F4312E /* LoginViewController.swift */,
+				20203F1121BAFEB70083D700 /* SignupViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,9 +227,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A07B32A21AECFD300911EC2 /* LaunchScreen.storyboard in Resources */,
+				20203F1321BAFF3C0083D700 /* Main.storyboard in Resources */,
 				2A07B32721AECFD300911EC2 /* Assets.xcassets in Resources */,
-				2A07B34D21AF0B1500911EC2 /* 96Sans.ttf in Resources */,
-				2A07B32521AECFD100911EC2 /* Main.storyboard in Resources */,
+				20203F1021BAFE820083D700 /* Signup.storyboard in Resources */,
+				20203F0D21BAFE680083D700 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +250,8 @@
 			files = (
 				2A5A22B421B1BB1D00F4312E /* LoginViewController.swift in Sources */,
 				2A07B32221AECFD100911EC2 /* MainViewController.swift in Sources */,
+				20203F1221BAFEB70083D700 /* SignupViewController.swift in Sources */,
+				20203F0921BAFD660083D700 /* StoryboardExtensions.swift in Sources */,
 				2A07B32021AECFD100911EC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +275,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		20203F0B21BAFE680083D700 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20203F0C21BAFE680083D700 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		20203F0E21BAFE820083D700 /* Signup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20203F0F21BAFE820083D700 /* Base */,
+			);
+			name = Signup.storyboard;
+			sourceTree = "<group>";
+		};
 		2A07B32321AECFD100911EC2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7BEAG244J;
 				INFOPLIST_FILE = CASL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7BEAG244J;
 				INFOPLIST_FILE = CASL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
