@@ -20,6 +20,7 @@
 		2A07B32A21AECFD300911EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A07B32821AECFD300911EC2 /* LaunchScreen.storyboard */; };
 		2A07B33521AECFD300911EC2 /* CASLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07B33421AECFD300911EC2 /* CASLTests.swift */; };
 		2A5A22B421B1BB1D00F4312E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A22B321B1BB1D00F4312E /* LoginViewController.swift */; };
+		2A5A22B821BB087A00F4312E /* 96Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A22B721BB087A00F4312E /* 96Sans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		2A07B33021AECFD300911EC2 /* CASLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CASLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A07B33421AECFD300911EC2 /* CASLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASLTests.swift; sourceTree = "<group>"; };
 		2A07B33621AECFD300911EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A07B34C21AF0B1500911EC2 /* 96Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 96Sans.ttf; path = ../../../../Desktop/XD_Final/Fonts/96_Sans/96Sans.ttf; sourceTree = "<group>"; };
 		2A5A22B321B1BB1D00F4312E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2A5A22B721BB087A00F4312E /* 96Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 96Sans.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +94,6 @@
 		2A07B31321AECFD100911EC2 = {
 			isa = PBXGroup;
 			children = (
-				2A07B34B21AF0B0000911EC2 /* fonts */,
 				2A07B31E21AECFD100911EC2 /* CASL */,
 				2A07B33321AECFD300911EC2 /* CASLTests */,
 				2A07B31D21AECFD100911EC2 /* Products */,
@@ -112,6 +112,7 @@
 		2A07B31E21AECFD100911EC2 /* CASL */ = {
 			isa = PBXGroup;
 			children = (
+				2A5A22B621BB086800F4312E /* Resources */,
 				2A5A22B521B1BB2400F4312E /* ViewControllers */,
 				2A07B31F21AECFD100911EC2 /* AppDelegate.swift */,
 				2A07B32621AECFD300911EC2 /* Assets.xcassets */,
@@ -130,14 +131,6 @@
 			path = CASLTests;
 			sourceTree = "<group>";
 		};
-		2A07B34B21AF0B0000911EC2 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				2A07B34C21AF0B1500911EC2 /* 96Sans.ttf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		2A5A22B521B1BB2400F4312E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +142,14 @@
 				20203F1621BB04FB0083D700 /* ForgotFlowViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A5A22B621BB086800F4312E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A22B721BB087A00F4312E /* 96Sans.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +236,7 @@
 				2A07B32A21AECFD300911EC2 /* LaunchScreen.storyboard in Resources */,
 				20203F1321BAFF3C0083D700 /* Main.storyboard in Resources */,
 				2A07B32721AECFD300911EC2 /* Assets.xcassets in Resources */,
+				2A5A22B821BB087A00F4312E /* 96Sans.ttf in Resources */,
 				20203F1021BAFE820083D700 /* Signup.storyboard in Resources */,
 				20203F0D21BAFE680083D700 /* Login.storyboard in Resources */,
 				20203F1521BB04C50083D700 /* ForgotFlow.storyboard in Resources */,
