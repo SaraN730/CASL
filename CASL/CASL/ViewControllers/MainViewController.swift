@@ -21,6 +21,8 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func forgotButton(_ sender: UIButton) {
+        let vc: ForgotFlowViewController = StoryBoard.forgotFlow.createViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {

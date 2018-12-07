@@ -13,6 +13,7 @@ struct StoryBoard {
     static let main = UIStoryboard(name: "Main", bundle: nil)
     static let login = UIStoryboard(name: "Login", bundle: nil)
     static let signup = UIStoryboard(name: "Signup", bundle: nil)
+    static let forgotFlow = UIStoryboard(name: "ForgotFlow", bundle: nil)
 }
 
 extension UIViewController {
